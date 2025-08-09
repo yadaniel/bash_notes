@@ -19,7 +19,10 @@ declare -i VAR=123  # integer
 declare -a VAR=(1 2 3)  # array  
 declare -f  # show functions  
 declare -x  # show exported variables  
-  
+
+# using set-x
+set -x => debug scripts  
+
 # using set-e  
 set -e => exit the script on first command exiting with non-zero exit code  
 note following exceptions  
