@@ -28,3 +28,10 @@ false
 (echo "separate shell"; exit 0;)
 echo "after separate shell"
 
+# here-string operator
+IFS=':' read a b c <<< "foo:bar:foobar"
+
+# process substitution
+IFS=':' read a b c < <(echo "foo:bar:foobar")
+
+
